@@ -395,6 +395,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .stat .num.warm { color: var(--forge); }
 .stat h3 { font-size: 1.05rem; margin: 0.9rem 0 0.35rem; }
+.stat > h3:first-child { margin-top: 0; }
 .stat p { color: var(--muted); margin: 0; font-size: 0.96rem; }
 
 @media (max-width: 720px) {
