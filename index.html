@@ -3,34 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minutesmith</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 4rem 1.5rem;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #fff;
-    text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e8e8e8; background: #111; }
-    a { color: #6cb6ff; }
-  }
-  h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-  .links { margin-top: 2rem; display: flex; gap: 1.5rem; justify-content: center; }
-  .links a { font-weight: 600; }
-</style>
+<title>Minutesmith — Meeting notes, forged on your Mac</title>
+<meta name="description" content="Minutesmith records, transcribes, and summarizes your meetings entirely on your Mac. No account, no cloud by default — your conversations never leave your device unless you choose otherwise.">
+<link rel="icon" href="assets/minutesmith-icon.png">
+<meta property="og:title" content="Minutesmith — Meeting notes, forged on your Mac">
+<meta property="og:description" content="Record, transcribe, and summarize meetings entirely on-device. No account. No cloud by default.">
+<meta property="og:image" content="assets/minutesmith-icon.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Minutesmith</h1>
-<p>Meeting notes, on your Mac.</p>
-<div class="links">
-  <a href="./privacy.html">Privacy Policy</a>
-  <a href="./support.html">Support</a>
-</div>
+
+<!-- ── Header (shared) ─────────────────────────── -->
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="./index.html">
+      <img src="assets/minutesmith-icon.png" alt="">
+      <span class="brand-name">Minutesmith</span>
+    </a>
+    <nav class="nav">
+      <a class="nav-link" href="#how">How it works</a>
+      <a class="nav-link" href="#privacy">Privacy</a>
+      <a class="nav-link" href="./support.html">Support</a>
+      <!-- TODO: replace href="#get" with the Mac App Store URL once live -->
+      <a class="btn btn-primary btn-sm" href="#get">Download for Mac</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── Hero ──────────────────────────────────── -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge"><span class="dot"></span> ON-DEVICE · macOS</span>
+      <h1>Meetings in.<br><span class="out">Minutes out.</span></h1>
+      <p class="lead">Minutesmith records, transcribes, and summarizes your meetings — start to finish, right on your Mac. No account. No cloud by default.</p>
+      <div class="cta-row">
+        <!-- TODO: replace href="#get" with the Mac App Store URL once live -->
+        <a class="btn btn-primary" href="#get">Download for Mac</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <p class="fineprint">macOS 13+ · Apple silicon &amp; Intel</p>
+
+      <div class="hero-shot">
+        <div class="window">
+          <div class="titlebar">
+            <i class="r"></i><i class="y"></i><i class="g"></i>
+            <span>Minutesmith</span>
+          </div>
+          <img src="assets/screenshot-light.png" width="1280" height="810"
+               alt="The Minutesmith app showing a meeting transcript alongside an answer to a question asked about the transcript.">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Positioning / proof ───────────────────── -->
+  <section class="section alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick">[00:00]</span> <span class="label">The pitch</span></p>
+        <h2>Great notes shouldn't cost you your privacy.</h2>
+        <p class="section-lead">Most meeting tools ship every word you say to someone else's server. Minutesmith has no server of its own — the whole workshop runs on your machine.</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal">
+          <div class="num">100%</div>
+          <h3>On-device by default</h3>
+          <p>Transcription and summaries run locally. Your audio never has to leave your Mac.</p>
+        </div>
+        <div class="stat reveal">
+          <div class="num warm">0</div>
+          <h3>Accounts to create</h3>
+          <p>No sign-up, no login, no email required. Open the app and record.</p>
+        </div>
+        <div class="stat reveal">
+          <div class="num">None</div>
+          <h3>Analytics or tracking</h3>
+          <p>No usage stats, no crash SDKs, no ad networks. Nothing is phoned home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How it works (the forge stages) ───────── -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick">[ ▸ ]</span> <span class="label">How it works</span></p>
+        <h2>From raw audio to finished minutes.</h2>
+        <p class="section-lead">Four steps, played back like the meeting itself.</p>
+      </div>
+
+      <!-- Record -->
+      <div class="stage reveal">
+        <div class="stage-copy">
+          <p class="eyebrow"><span class="tick">[00:00]</span> <span class="label">Record</span></p>
+          <h3>Capture the whole conversation.</h3>
+          <p>Hit record — or press <span class="kbd">⌘⇧R</span> from anywhere — and Minutesmith grabs your microphone and the system audio from Zoom, Teams, or Meet. You get everyone's words, not just your half of the call.</p>
+          <p>Works in light or dark, and stays out of your way while you focus on the meeting.</p>
+        </div>
+        <div class="shot">
+          <img src="assets/screenshot-dark.png" width="1280" height="810" loading="lazy"
+               alt="Minutesmith in dark mode with Microphone, System Audio, and Mic + System capture options next to a red Record button.">
+        </div>
+      </div>
+
+      <!-- Transcribe -->
+      <div class="stage flip reveal">
+        <div class="stage-copy">
+          <p class="eyebrow"><span class="tick">[00:20]</span> <span class="label">Transcribe</span></p>
+          <h3>Transcribed on your Mac, even offline.</h3>
+          <p>A local Whisper model turns speech into a clean, timestamped transcript using Metal GPU acceleration. Download a model once and it works offline from then on — no API key, no upload.</p>
+        </div>
+        <div class="shot">
+          <img src="assets/screenshot-whisper.png" width="1280" height="810" loading="lazy"
+               alt="Minutesmith transcription settings listing on-device Whisper models available to download.">
+        </div>
+      </div>
+
+      <!-- Summarize -->
+      <div class="stage reveal">
+        <div class="stage-copy">
+          <p class="eyebrow"><span class="tick">[00:45]</span> <span class="label">Summarize</span></p>
+          <h3>Summaries shaped to the meeting.</h3>
+          <p>Standup, Weekly Sync, Sales Call, or General templates tailor each summary to the kind of conversation you had. Summarization runs on a local model by default — or plug in your own key when you want a specific one.</p>
+          <div class="providers">
+            <span class="chip"><span class="k" style="background:var(--green)"></span> On-device</span>
+            <span class="chip"><span class="k" style="background:var(--refined)"></span> OpenAI</span>
+            <span class="chip"><span class="k" style="background:var(--forge)"></span> Anthropic</span>
+            <span class="chip"><span class="k" style="background:var(--ember)"></span> Ollama</span>
+          </div>
+        </div>
+        <div class="shot">
+          <img src="assets/screenshot-models.png" width="1280" height="810" loading="lazy"
+               alt="Minutesmith summarization settings showing a built-in offline provider with several downloadable on-device models.">
+        </div>
+      </div>
+
+      <!-- Ask -->
+      <div class="stage flip reveal">
+        <div class="stage-copy">
+          <p class="eyebrow"><span class="tick">[01:10]</span> <span class="label">Ask</span></p>
+          <h3>Interrogate the transcript.</h3>
+          <p>Wondering what was decided? Ask a plain-language question and get an answer drawn straight from what was actually said — with the transcript right beside it, so you can check the receipts.</p>
+          <p>Everything lives in a searchable local library of past meetings you can export as files whenever you need them.</p>
+        </div>
+        <div class="shot">
+          <img src="assets/screenshot-light.png" width="1280" height="810" loading="lazy"
+               alt="The Ask panel in Minutesmith answering a question using content from the meeting transcript shown alongside it.">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Privacy band ──────────────────────────── -->
+  <section class="section alt" id="privacy">
+    <div class="wrap">
+      <div class="band reveal">
+        <p class="eyebrow"><span class="tick">[01:30]</span> <span class="label">Your data</span></p>
+        <h2>What's said in the room stays on your machine.</h2>
+        <p>Recordings, transcripts, and summaries are saved as plain files in your own app-data folder — never uploaded to a server operated by us, because no such server exists. Turn on a cloud provider and the request goes straight from your Mac to them, using your key. We never sit in the middle.</p>
+        <div class="band-links">
+          <a href="./privacy.html">Read the privacy policy →</a>
+          <a href="./support.html">Questions? Get support →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Final CTA ─────────────────────────────── -->
+  <section class="section get" id="get">
+    <div class="wrap">
+      <p class="eyebrow" style="justify-content:center"><span class="tick">[ ⏹ ]</span> <span class="label">Stop recording</span></p>
+      <h2>Turn your next meeting into minutes.</h2>
+      <p class="section-lead" style="margin-inline:auto">Download Minutesmith and keep every conversation where it belongs — on your Mac.</p>
+      <div class="cta-row">
+        <!-- TODO: replace href="#" with the Mac App Store URL once the listing is live -->
+        <a class="btn btn-primary" href="#">Download on the Mac App Store</a>
+        <a class="btn btn-ghost" href="mailto:rupertyip@gmail.com?subject=Minutesmith">Email the maker</a>
+      </div>
+      <p class="fineprint">Launch pricing — 50% off through Oct 31, 2026.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer (shared) ─────────────────────────── -->
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div class="foot-brand">
+      <a class="brand" href="./index.html">
+        <img src="assets/minutesmith-icon.png" alt="">
+        <span class="brand-name">Minutesmith</span>
+      </a>
+      <p>Meeting notes, forged on your Mac. Record, transcribe, and summarize — privately.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#get">Download</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="./support.html">Support</a></li>
+        <li><a href="mailto:rupertyip@gmail.com?subject=Minutesmith%20Support">Email support</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="./privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap baseline">
+    <span>© 2026 Rupert Yip</span>
+    <span class="mono">Made for macOS</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal — respects reduced-motion via CSS fallback.
+  const items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    items.forEach((el) => io.observe(el));
+  } else {
+    items.forEach((el) => el.classList.add('in'));
+  }
+</script>
+
 </body>
 </html>
