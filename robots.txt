@@ -1,0 +1,42 @@
+# robots.txt — https://ghostlymage.com/
+# Everything here is public and meant to be found.
+
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI crawlers so Minutesmith can be indexed and cited
+# in AI answers. Remove any block below to opt a given crawler out.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://ghostlymage.com/sitemap.xml
