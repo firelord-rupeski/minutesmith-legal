@@ -523,6 +523,13 @@ img { max-width: 100%; height: auto; display: block; }
   border-top: 1px solid var(--border);
 }
 .article h2:first-of-type { border-top: 0; padding-top: 0; }
+.article h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.4rem;
+}
 .article p, .article li { color: #d6dcec; }
 .article p { margin: 0 0 1rem; }
 .article ul { margin: 0 0 1.2rem; padding-left: 1.2rem; }
