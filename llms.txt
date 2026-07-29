@@ -3,10 +3,10 @@
 > Minutesmith is a macOS app that records, transcribes, and summarizes meetings and lectures entirely on-device. There is no account, no cloud, and no server of the developer's — recordings, transcripts, and summaries stay on the user's Mac unless they explicitly opt into a third-party AI provider using their own API key.
 
 ## Pages
-- [Home](https://ghostlymage.com/): What Minutesmith is, how it works, and its privacy stance.
-- [Features](https://ghostlymage.com/features.html): The full list of what the app does.
-- [Support](https://ghostlymage.com/support.html): How to get help, report a bug, and fix recording permissions.
-- [Privacy policy](https://ghostlymage.com/privacy.html): How data is handled (it stays local by default).
+- [Home](https://minutesmith.dev/): What Minutesmith is, how it works, and its privacy stance.
+- [Features](https://minutesmith.dev/features.html): The full list of what the app does.
+- [Support](https://minutesmith.dev/support.html): How to get help, report a bug, and fix recording permissions.
+- [Privacy policy](https://minutesmith.dev/privacy.html): How data is handled (it stays local by default).
 
 ## Key facts
 - Platform: macOS 12 or later, Apple silicon.

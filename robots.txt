@@ -1,4 +1,4 @@
-# robots.txt — https://ghostlymage.com/
+# robots.txt — https://minutesmith.dev/
 # Everything here is public and meant to be found.
 
 User-agent: *
@@ -39,4 +39,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://ghostlymage.com/sitemap.xml
+Sitemap: https://minutesmith.dev/sitemap.xml
