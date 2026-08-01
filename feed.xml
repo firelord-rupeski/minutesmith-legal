@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minutesmith Blog</title>
+    <link>https://minutesmith.dev/blog/index.html</link>
+    <description>Notes on privacy-first software, on-device AI, and building Minutesmith.</description>
+    <language>en-us</language>
+    <atom:link href="https://minutesmith.dev/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Why your meeting notes app can read your meetings, and Minutesmith's can't</title>
+      <link>https://minutesmith.dev/blog/why-your-meeting-notes-app-can-read-your-meetings.html</link>
+      <guid isPermaLink="true">https://minutesmith.dev/blog/why-your-meeting-notes-app-can-read-your-meetings.html</guid>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 -0700</pubDate>
+      <description>Most privacy claims are a policy. This one's an architecture. Minutesmith records, transcribes, and summarizes meetings entirely on your Mac, here's why that's an architectural choice, not a policy promise.</description>
+    </item>
+
+  </channel>
+</rss>
