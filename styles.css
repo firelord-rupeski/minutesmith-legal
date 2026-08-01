@@ -335,6 +335,41 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--green);
   box-shadow: 0 0 10px var(--green);
 }
+.pill-soon {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--body);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1;
+  color: var(--text);
+  background: linear-gradient(135deg, #0078d4, #005a9e);
+  border: 1px solid transparent;
+  padding: 0.45em 0.85em;
+  border-radius: 10px;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px -10px rgba(0, 120, 212, 0.55);
+}
+.nav .nav-cta .pill-soon { font-size: 0.92rem; }
+.nav-cta {
+  display: flex;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+.cta-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 720px) {
+  .nav .nav-cta {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem var(--gutter) 0.25rem;
+  }
+  .nav .nav-cta .btn-primary { margin: 0; }
+}
 .hero h1 {
   font-family: var(--display);
   font-weight: 800;
