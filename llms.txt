@@ -5,6 +5,7 @@
 ## Pages
 - [Home](https://minutesmith.dev/): What Minutesmith is, how it works, and its privacy stance.
 - [Features](https://minutesmith.dev/features.html): The full list of what the app does.
+- [Blog](https://minutesmith.dev/blog/): Notes on privacy-first software, on-device AI, and building Minutesmith.
 - [Support](https://minutesmith.dev/support.html): How to get help, report a bug, and fix recording permissions.
 - [Privacy policy](https://minutesmith.dev/privacy.html): How data is handled (it stays local by default).
 
