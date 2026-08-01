@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minutesmith Blog</title>
-    <link>https://minutesmith.dev/blog/index.html</link>
+    <link>https://minutesmith.dev/blog/</link>
     <description>Notes on privacy-first software, on-device AI, and building Minutesmith.</description>
     <language>en-us</language>
     <atom:link href="https://minutesmith.dev/feed.xml" rel="self" type="application/rss+xml" />
