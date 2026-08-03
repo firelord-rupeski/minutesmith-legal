@@ -34,37 +34,52 @@
     {
       "@type": "Question",
       "name": "Does Minutesmith work offline?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Recording, transcription, and summarizing all run on your Mac. Download a transcription model once and everything keeps working in full airplane mode — no internet required. The only time anything leaves your Mac is if you deliberately connect a cloud AI provider with your own key." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Recording, transcription, and summarizing all run locally on your Mac or PC. Download the on-device transcription model once, and everything keeps working with no internet connection. The only time anything leaves your machine is if you deliberately connect a cloud AI provider using your own API key." }
     },
     {
       "@type": "Question",
       "name": "Where are my recordings stored, and who can see them?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Recordings, transcripts, summaries, and notes are saved as plain files in Minutesmith's own folder on your Mac. Nothing is uploaded to a server of ours, because we don't run one — there's no account, no analytics, and no tracking. Delete any meeting from inside the app, or remove the files yourself, whenever you like." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Recordings, transcripts, summaries, and notes are saved as plain files in Minutesmith's own folder on your device. Nothing is uploaded to a server of ours, because we don't run one — there's no account, no analytics, and no tracking. Delete any meeting from inside the app, or remove the files yourself, whenever you like." }
     },
     {
       "@type": "Question",
       "name": "Can it record audio from Zoom, Teams, and Meet?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Minutesmith captures your microphone and your Mac's system audio together, so the transcript has everyone on the call — not just your half. It uses macOS Screen Recording permission for system audio only: audio, never video or screenshots. If a recording comes out silent, check the Permissions section below." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Minutesmith captures your microphone and your computer's system audio together, so the transcript has everyone on the call — not just your half. On Mac, this uses macOS's Screen Recording permission for system audio only: audio, never video or screenshots. On Windows, it uses the OS's built-in audio loopback, which doesn't need a separate permission — just make sure your system volume isn't muted. If a recording comes out silent, check the Permissions section below." }
     },
     {
       "@type": "Question",
       "name": "Do I need an account or a subscription?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No account, ever — there's nothing to sign up for. Minutesmith is a one-time purchase on the Mac App Store, not a subscription. Launch pricing is $19.99 — 50% off the regular $39.99 — through October 31, 2026." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No account, ever — there's nothing to sign up for. Minutesmith is a one-time purchase, not a subscription, on both Mac and Windows. Launch pricing is $19.99 — 50% off the regular $39.99 — through October 31, 2026." }
     },
     {
       "@type": "Question",
-      "name": "Which Macs does it support?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Minutesmith runs on macOS 12 or later on Apple silicon (M1 and later). On-device transcription uses your Mac's own GPU." }
+      "name": "Can I use my license on more than one computer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Each license activates on one device. Email support if you need to move it to a new machine." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer refunds?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. For a direct Windows purchase, email us within 14 days of purchase for a full refund, no questions asked. For a Mac App Store purchase, refunds are handled directly by Apple under their standard App Store refund policy rather than by us — start that from your purchase history in the App Store." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the system requirements?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Minutesmith runs on macOS 12 or later on Apple silicon (M1 and later), or on Windows 10 64-bit or later. On-device transcription uses your computer's own GPU." }
     },
     {
       "@type": "Question",
       "name": "Can I use my own OpenAI, Anthropic, or Ollama models?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Summaries run on a built-in on-device model by default, but you can connect OpenAI, Anthropic, or a self-hosted Ollama instance with your own API key. When you do, your text goes straight from your Mac to that provider using your key — never through a server of ours. It's optional and off by default." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Summaries run on a built-in on-device model by default, but you can connect OpenAI, Anthropic, or a self-hosted Ollama instance with your own API key. When you do, your text goes straight from your device to that provider using your key — never through a server of ours. It's optional and off by default." }
     },
     {
       "@type": "Question",
       "name": "Is it legal to record my meetings?",
       "acceptedAnswer": { "@type": "Answer", "text": "It depends where you and the other participants are. Many places require the consent of one or more parties before a conversation can be recorded, and you're responsible for meeting the consent and notice rules for each meeting you record. See the Privacy Policy for the details, and check with a lawyer if you're unsure — nothing here is legal advice." }
+    },
+    {
+      "@type": "Question",
+      "name": "What permissions does Minutesmith need?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On Mac, Minutesmith needs Microphone access to hear you, and Screen Recording permission to capture system audio from your meeting apps (audio only, never video or screenshots). On Windows, it needs Microphone access; system audio capture uses Windows' built-in audio loopback and doesn't require a separate permission, but make sure your system volume isn't muted. See the Permissions section below for how to check each." }
     }
   ]
 }
@@ -87,7 +102,7 @@
       <a class="nav-link" href="./support.html">Support</a>
       <div class="nav-cta">
         <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/minutesmith/id6788589489?mt=12">Download for Mac</a>
-        <span class="pill-soon">Windows: coming soon</span>
+        <a class="btn btn-windows btn-sm" href="https://minutesmith.lemonsqueezy.com/">Download for Windows</a>
       </div>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
@@ -112,25 +127,34 @@
     <h2>Frequently asked questions</h2>
 
     <h3>Does Minutesmith work offline?</h3>
-    <p>Yes. Recording, transcription, and summarizing all run on your Mac. Download a transcription model once and everything keeps working in full airplane mode — no internet required. The only time anything leaves your Mac is if you deliberately connect a cloud AI provider with your own key.</p>
+    <p>Yes. Recording, transcription, and summarizing all run locally on your Mac or PC. Download the on-device transcription model once, and everything keeps working with no internet connection. The only time anything leaves your machine is if you deliberately connect a cloud AI provider using your own API key.</p>
 
     <h3>Where are my recordings stored, and who can see them?</h3>
-    <p>Recordings, transcripts, summaries, and notes are saved as plain files in Minutesmith's own folder on your Mac. Nothing is uploaded to a server of ours, because we don't run one — there's no account, no analytics, and no tracking. Delete any meeting from inside the app, or remove the files yourself, whenever you like.</p>
+    <p>Recordings, transcripts, summaries, and notes are saved as plain files in Minutesmith's own folder on your device. Nothing is uploaded to a server of ours, because we don't run one — there's no account, no analytics, and no tracking. Delete any meeting from inside the app, or remove the files yourself, whenever you like.</p>
 
     <h3>Can it record audio from Zoom, Teams, and Meet?</h3>
-    <p>Yes. Minutesmith captures your microphone and your Mac's system audio together, so the transcript has everyone on the call — not just your half. It uses macOS Screen Recording permission for system audio only: audio, never video or screenshots. If a recording comes out silent, check the Permissions section below.</p>
+    <p>Yes. Minutesmith captures your microphone and your computer's system audio together, so the transcript has everyone on the call — not just your half. On Mac, this uses macOS's Screen Recording permission for system audio only: audio, never video or screenshots. On Windows, it uses the OS's built-in audio loopback, which doesn't need a separate permission — just make sure your system volume isn't muted. If a recording comes out silent, check the Permissions section below.</p>
 
     <h3>Do I need an account or a subscription?</h3>
-    <p>No account, ever — there's nothing to sign up for. Minutesmith is a one-time purchase on the Mac App Store, not a subscription. Launch pricing is $19.99 — 50% off the regular $39.99 — through October 31, 2026.</p>
+    <p>No account, ever — there's nothing to sign up for. Minutesmith is a one-time purchase, not a subscription, on both Mac and Windows. Launch pricing is $19.99 — 50% off the regular $39.99 — through October 31, 2026.</p>
 
-    <h3>Which Macs does it support?</h3>
-    <p>Minutesmith runs on macOS 12 or later on Apple silicon (M1 and later). On-device transcription uses your Mac's own GPU.</p>
+    <h3>Can I use my license on more than one computer?</h3>
+    <p>Each license activates on one device. Email support if you need to move it to a new machine.</p>
+
+    <h3>Do you offer refunds?</h3>
+    <p>Yes. For a direct Windows purchase, email us within 14 days of purchase for a full refund, no questions asked. For a Mac App Store purchase, refunds are handled directly by Apple under their standard App Store refund policy rather than by us — start that from your purchase history in the App Store.</p>
+
+    <h3>What are the system requirements?</h3>
+    <p>Minutesmith runs on macOS 12 or later on Apple silicon (M1 and later), or on Windows 10 64-bit or later. On-device transcription uses your computer's own GPU.</p>
 
     <h3>Can I use my own OpenAI, Anthropic, or Ollama models?</h3>
-    <p>Yes. Summaries run on a built-in on-device model by default, but you can connect OpenAI, Anthropic, or a self-hosted Ollama instance with your own API key. When you do, your text goes straight from your Mac to that provider using your key — never through a server of ours. It's optional and off by default.</p>
+    <p>Yes. Summaries run on a built-in on-device model by default, but you can connect OpenAI, Anthropic, or a self-hosted Ollama instance with your own API key. When you do, your text goes straight from your device to that provider using your key — never through a server of ours. It's optional and off by default.</p>
 
     <h3>Is it legal to record my meetings?</h3>
     <p>It depends where you and the other participants are. Many places require the consent of one or more parties before a conversation can be recorded, and you're responsible for meeting the consent and notice rules for each meeting you record. See the <a href="./privacy.html">Privacy Policy</a> for the details, and check with a lawyer if you're unsure — nothing here is legal advice.</p>
+
+    <h3>What permissions does Minutesmith need?</h3>
+    <p>On Mac, Minutesmith needs Microphone access to hear you, and Screen Recording permission to capture system audio from your meeting apps (audio only — no video, no screenshots of your screen). On Windows, it needs Microphone access; system audio capture uses Windows' built-in audio loopback and doesn't require a separate permission, but make sure your system volume isn't muted. See the Permissions section below for how to check each.</p>
 
     <h2>Contact</h2>
     <p>Email <a href="mailto:support@minutesmith.dev">support@minutesmith.dev</a> and you'll hear back from a real person (me), usually pretty quickly.</p>
@@ -138,14 +162,15 @@
     <h2>Reporting a bug</h2>
     <p>To help me hunt it down fast, drop in:</p>
     <ul>
-      <li>Your macOS version</li>
+      <li>Your OS and version (macOS or Windows)</li>
       <li>What you were doing when it happened (recording, transcribing, summarizing, exporting, etc.)</li>
       <li>Whether you're using the built-in on-device model or a connected provider (OpenAI, Anthropic, Ollama)</li>
       <li>Any error message shown in the app</li>
     </ul>
 
     <h2>Permissions</h2>
-    <p>Minutesmith needs Microphone access to hear you, and Screen Recording permission to grab system audio from your meeting apps (audio only — no video, no screenshots of your screen). If a recording comes out silent or half-there, pop into System Settings → Privacy &amp; Security and make sure both are switched on.</p>
+    <p><strong>On Mac:</strong> Minutesmith needs Microphone access to hear you, and Screen Recording permission to grab system audio from your meeting apps (audio only — no video, no screenshots of your screen). If a recording comes out silent or half-there, pop into System Settings → Privacy &amp; Security and make sure both are switched on.</p>
+    <p><strong>On Windows:</strong> Minutesmith needs Microphone access to hear you; Windows will prompt you to allow this the first time you record. System audio capture uses Windows' built-in audio loopback and doesn't require a separate permission, but make sure your system volume isn't muted. If a recording comes out silent, check Settings → Privacy &amp; security → Microphone and your system volume.</p>
 
   </div>
 
@@ -159,7 +184,7 @@
         <img src="assets/minutesmith-icon.png" alt="">
         <span class="brand-name">Minutesmith</span>
       </a>
-      <p>Meeting notes that stay on your Mac. No cloud, no account, no catch.</p>
+      <p>Meeting notes that stay on your device. No cloud, no account, no catch.</p>
     </div>
     <div class="foot-col">
       <h4>Product</h4>
@@ -187,7 +212,7 @@
   </div>
   <div class="wrap baseline">
     <span>© 2026 Ghostly Mage Software</span>
-    <span class="mono">Made for macOS</span>
+    <span class="mono">Made for Mac &amp; Windows</span>
   </div>
 </footer>
 

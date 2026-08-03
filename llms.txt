@@ -1,6 +1,6 @@
 # Minutesmith
 
-> Minutesmith is a macOS app that records, transcribes, and summarizes meetings and lectures entirely on-device. There is no account, no cloud, and no server of the developer's — recordings, transcripts, and summaries stay on the user's Mac unless they explicitly opt into a third-party AI provider using their own API key.
+> Minutesmith is a Mac and Windows app that records, transcribes, and summarizes meetings and lectures entirely on-device. There is no account, no cloud, and no server of the developer's — recordings, transcripts, and summaries stay on the user's device unless they explicitly opt into a third-party AI provider using their own API key.
 
 ## Pages
 - [Home](https://minutesmith.dev/): What Minutesmith is, how it works, and its privacy stance.
@@ -10,12 +10,13 @@
 - [Privacy policy](https://minutesmith.dev/privacy.html): How data is handled (it stays local by default).
 
 ## Key facts
-- Platform: macOS 12 or later, Apple silicon.
+- Platforms: macOS 12 or later (Apple silicon), and Windows 10 64-bit or later.
 - Records the microphone and system audio together (Zoom, Teams, Meet), so the transcript captures everyone on the call.
 - Transcription runs locally with an on-device Whisper model and works fully offline.
 - Summaries are shaped by meeting-type templates: Standup, Weekly Sync, Sales Call, Lecture, and General.
-- Summarization runs on a local model by default; optionally connects to OpenAI, Anthropic, or a self-hosted Ollama instance using the user's own API key, sent directly from the Mac to that provider.
+- Summarization runs on a local model by default; optionally connects to OpenAI, Anthropic, or a self-hosted Ollama instance using the user's own API key, sent directly from the device to that provider.
 - "Ask" feature answers plain-English questions about a transcript.
 - Meetings are stored as plain files in a local, searchable library and can be exported.
 - No account, no sign-up, no analytics, and no tracking.
 - Available on the Mac App Store: https://apps.apple.com/us/app/minutesmith/id6788589489?mt=12
+- Windows version: available; direct download link to be added to the site.

@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Minutesmith — Privacy Policy</title>
-<meta name="description" content="How Minutesmith handles your data: on-device by default, no accounts, no analytics, and your recordings never leave your Mac unless you choose otherwise.">
+<meta name="description" content="How Minutesmith handles your data: on-device by default, no accounts, no analytics, and your recordings never leave your Mac or PC unless you choose otherwise.">
 <link rel="icon" href="assets/minutesmith-icon.png">
 <link rel="canonical" href="https://minutesmith.dev/privacy.html">
 <meta property="og:title" content="Minutesmith — Privacy Policy">
-<meta property="og:description" content="On-device by default, no accounts, no analytics — your recordings never leave your Mac unless you choose otherwise.">
+<meta property="og:description" content="On-device by default, no accounts, no analytics — your recordings never leave your Mac or PC unless you choose otherwise.">
 <meta property="og:image" content="https://minutesmith.dev/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Minutesmith">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Minutesmith — Privacy Policy">
-<meta name="twitter:description" content="On-device by default, no accounts, no analytics — your recordings never leave your Mac unless you choose otherwise.">
+<meta name="twitter:description" content="On-device by default, no accounts, no analytics — your recordings never leave your Mac or PC unless you choose otherwise.">
 <meta name="twitter:image" content="https://minutesmith.dev/assets/og-card.png">
 <meta name="twitter:image:alt" content="Minutesmith social card — 'Meeting notes that never leave your Mac' — beside a screenshot of the app showing a meeting transcript and summary. Record, transcribe, and summarize 100% on-device.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <a class="nav-link" href="./support.html">Support</a>
       <div class="nav-cta">
         <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/minutesmith/id6788589489?mt=12">Download for Mac</a>
-        <span class="pill-soon">Windows: coming soon</span>
+        <a class="btn btn-windows btn-sm" href="https://minutesmith.lemonsqueezy.com/">Download for Windows</a>
       </div>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
@@ -58,7 +58,7 @@
   <div class="doc-head">
     <p class="eyebrow"><span class="tick">[ § ]</span> <span class="label">Legal</span></p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 23, 2026</p>
+    <p class="updated">Last updated: August 2, 2026</p>
   </div>
 
   <div class="article">
@@ -66,14 +66,14 @@
     <p>This policy describes what Minutesmith ("the app") does and does not do with your data. Minutesmith is developed by Ghostly Mage Software ("we", "us"). Contact: <a href="mailto:support@minutesmith.dev">support@minutesmith.dev</a></p>
 
     <h2>Summary</h2>
-    <p>Minutesmith has no servers of its own. Everything the app records, transcribes, and summarizes is processed and stored on your Mac by default. The app never asks you to create an account and does not include any analytics, advertising, or tracking SDKs.</p>
+    <p>Minutesmith has no servers of its own. Everything the app records, transcribes, and summarizes is processed and stored on your Mac or PC by default. The app never asks you to create an account and does not include any analytics, advertising, or tracking SDKs.</p>
 
     <h2>What Minutesmith accesses</h2>
     <ul>
       <li><strong>Microphone</strong> — to record your voice during a meeting.</li>
-      <li><strong>Screen/system audio recording permission</strong> — used only to capture the system audio of other apps (e.g. Zoom, Teams, Meet) during a meeting, so the transcript includes what other participants said. Minutesmith does not record or transmit your screen's visual contents — only audio.</li>
+      <li><strong>System audio capture</strong> — used only to capture the system audio of other apps (e.g. Zoom, Teams, Meet) during a meeting, so the transcript includes what other participants said. Minutesmith does not record or transmit your screen's visual contents — only audio.</li>
     </ul>
-    <p>Both permissions are requested by macOS directly and can be revoked at any time in System Settings → Privacy &amp; Security.</p>
+    <p>On Mac, both are requested as macOS permissions (Microphone, and Screen Recording for system audio) and can be revoked at any time in System Settings → Privacy &amp; Security. On Windows, Microphone access is requested as a standard Windows permission; system audio uses Windows' built-in audio loopback, which doesn't require a separate OS permission.</p>
 
     <h2>Your responsibility for recording consent</h2>
     <div class="callout">
@@ -81,7 +81,7 @@
     </div>
 
     <h2>What Minutesmith stores, and where</h2>
-    <p>Recordings, transcripts, summaries, titles, notes, and tags for each meeting are saved as local files in the app's own application data folder on your Mac. Nothing is uploaded to a server operated by us, because no such server exists. You can delete this data at any time by deleting meetings from within the app or removing the files directly.</p>
+    <p>Recordings, transcripts, summaries, titles, notes, and tags for each meeting are saved as local files in the app's own application data folder on your device. Nothing is uploaded to a server operated by us, because no such server exists. You can delete this data at any time by deleting meetings from within the app or removing the files directly.</p>
 
     <h2>Optional third-party AI processing</h2>
     <p>By default, transcription and summarization run entirely on-device using local models. If you choose to, you can instead connect Minutesmith to:</p>
@@ -90,7 +90,7 @@
       <li>Anthropic (for summarization)</li>
       <li>A self-hosted Ollama server you control</li>
     </ul>
-    <p>If you turn one of these on, you supply your own API key inside the app, and the relevant audio or transcript text is sent directly from your Mac to that provider using your key — not through any server of ours. That provider's own privacy policy and terms govern how they handle the data you send them. We recommend reviewing those policies if you enable this feature. This is entirely optional and off by default.</p>
+    <p>If you turn one of these on, you supply your own API key inside the app, and the relevant audio or transcript text is sent directly from your device to that provider using your key — not through any server of ours. That provider's own privacy policy and terms govern how they handle the data you send them. We recommend reviewing those policies if you enable this feature. This is entirely optional and off by default.</p>
 
     <h2>What we don't do</h2>
     <ul>
@@ -121,7 +121,7 @@
         <img src="assets/minutesmith-icon.png" alt="">
         <span class="brand-name">Minutesmith</span>
       </a>
-      <p>Meeting notes that stay on your Mac. No cloud, no account, no catch.</p>
+      <p>Meeting notes that stay on your device. No cloud, no account, no catch.</p>
     </div>
     <div class="foot-col">
       <h4>Product</h4>
@@ -149,7 +149,7 @@
   </div>
   <div class="wrap baseline">
     <span>© 2026 Ghostly Mage Software</span>
-    <span class="mono">Made for macOS</span>
+    <span class="mono">Made for Mac &amp; Windows</span>
   </div>
 </footer>
 
