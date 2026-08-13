@@ -130,6 +130,14 @@ img { max-width: 100%; height: auto; display: block; }
   transform: translateY(-2px);
   box-shadow: 0 14px 40px -12px rgba(0, 120, 212, 0.75);
 }
+.btn-disabled,
+.btn-disabled:hover {
+  cursor: not-allowed;
+  opacity: 0.55;
+  filter: grayscale(0.4);
+  box-shadow: none;
+  transform: none;
+}
 
 /* Ghost = quiet secondary */
 .btn-ghost {
@@ -398,6 +406,40 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--mono);
   font-size: 0.8rem;
   color: var(--faint);
+}
+
+.price-was {
+  text-decoration: line-through;
+  color: var(--faint);
+  margin-right: 0.4em;
+}
+.price-now {
+  color: var(--refined);
+  font-weight: 700;
+}
+
+.hero-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  margin: 0 0 1.8rem;
+  font-family: var(--display);
+}
+.hero-price .price-was {
+  font-size: 1.15rem;
+  margin-right: 0;
+}
+.hero-price .price-now {
+  font-size: 1.9rem;
+}
+.hero-price .price-tag {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 /* Hero product shot — a glowing app window in the smithy */
